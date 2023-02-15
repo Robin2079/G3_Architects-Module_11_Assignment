@@ -1,0 +1,103 @@
+/* Main Style Rules */
+* {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+:root {
+    --bg-color: #FDF4E8;
+    --btn-color: #FF900E;
+}
+
+section {
+    width: 1140px;
+}
+
+/* Header Styles Start From Here */
+header {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.header_container {
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    width: 30%;
+}
+
+.header_logo h2 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header_menu {
+    width: 40%;
+}
+
+.header_menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_menu ul li {
+    list-style: none;   
+}
+
+.header_menu ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #424242;
+}
+/* Header Styles End Here */
+
+
+
+
+/* Hero Section Styles Start From Here */
+.hero {
+    background-color: var(--bg-color);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero_container {
+    width: 1140px;
+    text-align: center;
+}
+
+
+
+/*************************** @Medea Query Responsive Styles ***************************/
+@media screen and (max-width: 576px){
+
+    header{
+        padding: 0;
+        margin: 0;
+    }
+    .header_container, .header_menu ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .header_logo, .header_menu {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    
+    
+}
+/*************************** @Medea Query Responsive Styles ***************************/
