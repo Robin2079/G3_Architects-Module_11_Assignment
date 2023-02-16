@@ -202,7 +202,6 @@ section {
     font-size: 20px;
     line-height: 23px;
     color: #131313;
-
 }
 
 .our_experience_texts_column .text_box p {
@@ -212,6 +211,33 @@ section {
 .our_experience_image_column {
     width: 50%;
 }
+
+.our_experience_image_column .our_experience_btn {
+    background-color: var(--btn-color);
+    padding: 35px 42px;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    left: -62px;
+    top: -97px;
+}
+
+.our_experience_btn h1 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #ffffff;
+}
+
+.our_experience_btn h6 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
 
 
 /* Our Experience Setction Styles End Here*/
