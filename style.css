@@ -10,7 +10,7 @@
 }
 
 section {
-    width: 1200px;
+    width: 1250px;
 }
 
 /* Header Styles Start From Here */
@@ -23,7 +23,7 @@ section {
 }
 
 .header_container {
-    width: 1200px;
+    width: 1250px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,7 +77,7 @@ section {
 }
 
 .hero_container {
-    width: 1200px;
+    width: 1250px;
     text-align: center;
 }
 
@@ -170,7 +170,6 @@ section {
 /* Our Experience Setction Styles Start From Here*/
 .our_experience {
     margin: auto;
-
 }
 
 .our_experience_container {
@@ -178,7 +177,7 @@ section {
 }
 
 .our_experience_texts_column {
-    width: 50%;
+    width: 45%;
     padding-right: 100px;
 }
 
@@ -194,7 +193,7 @@ section {
 .our_experience_texts_column .text_box {
     padding: 30px;
     box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .our_experience_texts_column .text_box h6 {
@@ -209,7 +208,11 @@ section {
 }
 
 .our_experience_image_column {
-    width: 50%;
+    width: 55%;
+}
+
+.our_experience_image_column img {
+    width: 100%;
 }
 
 .our_experience_image_column .our_experience_btn {
@@ -237,10 +240,64 @@ section {
     color: #FFFFFF;
 }
 
-
-
-
 /* Our Experience Setction Styles End Here*/
+
+
+/* Some Facts Section Styles Start From Here */
+.some_facts {
+    margin: auto;
+    padding: 100px 0 150px 0;
+}
+
+.some_facts h2 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+}
+
+.some_facts p {
+    margin: 0;
+}
+
+.some_facts_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.some_facts_container .icon_box {
+    border: 1px solid var(--btn-color);
+    border-radius: 10px;
+    text-align: center;
+    padding: 60px 50px;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.some_facts_container .icon_box:last-child {
+    padding: 60px 60px;
+}
+
+.some_facts_container .icon_box:hover {
+    background-color: var(--btn-color);
+    transform: rotate(360deg);
+}
+
+.some_facts_container .icon_box h2 {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 53px;
+    color: #424242;
+}
+
+.some_facts_container .icon_box p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #727272;
+}
+
+/* Some Facts Section Styles End Here */
 
 
 
@@ -250,6 +307,10 @@ section {
 
 /*************************** @Medea Query Responsive Styles ***************************/
 @media screen and (max-width: 576px) {
+    main {
+        padding: 0;
+        margin: 0;
+    }
 
     header {
         padding: 0;
@@ -276,9 +337,11 @@ section {
 
     .hero_container {
         padding: 30px;
+        width: 100%;
     }
 
-    .our_features {
+    .our_features,
+    .our_experience {
         width: 100%;
         box-sizing: border-box;
         padding: 30px;
@@ -312,6 +375,53 @@ section {
         text-align: center;
         margin-top: 50px;
     }
+
+    .our_experience_container {
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 30px;
+        flex-wrap: wrap;
+    }
+
+    .our_experience_texts_column,
+    .our_experience_image_column {
+        width: 100%;
+        padding: 0;
+    }
+
+    .our_experience_texts_column h2 {
+        text-align: center;
+        border-left: 0;
+        padding: 0;
+    }
+
+    .our_experience_image_column .our_experience_btn {
+        padding: 20px 25px;
+    }
+
+    .our_experience_image_column .our_experience_btn h1 {
+        font-size: 30px;
+
+    }
+
+    .our_experience_image_column .our_experience_btn h6 {
+        font-size: 18px;
+    }
+
+    .some_facts {
+        padding: 30px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .some_facts_container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 0;
+    }
+
 
 }
 
