@@ -73,7 +73,7 @@ section {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 70px 0 30px 0;
+    padding: 70px 0 100px 0;
 }
 
 .hero_container {
@@ -122,7 +122,7 @@ section {
 .our_features {
     margin: auto;
     display: flex;
-    padding: 85px 0;
+    padding: 120px 0 100px 0;
     flex-wrap: wrap;
 }
 
@@ -170,6 +170,7 @@ section {
 /* Our Experience Setction Styles Start From Here*/
 .our_experience {
     margin: auto;
+    padding-top: 100px;
 }
 
 .our_experience_container {
@@ -296,12 +297,62 @@ section {
     line-height: 23px;
     color: #727272;
 }
-
 /* Some Facts Section Styles End Here */
 
 
 
+/* Our Sponsors Section Styles Starts From Here */
+.our_sponsors {
+    margin: auto;
+    padding: 100px 0 150px 0;
+    text-align: center;
+}
 
+.our_sponsors h2 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+}
+
+.our_sponsors p {
+    margin: 20px 25% 0 25%;
+}
+
+.our_sponsors_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.our_sponsors_container img {
+    filter: grayscale(100%)
+}
+/* Our Sponsors Section Styles End Here */
+
+
+
+/* Footer Styles Starts From Here */
+.footer {
+    background-color: var(--bg-color);
+    width: 1250px;
+    margin: auto;
+    text-align: center;
+    padding: 40px 0;
+    border-radius: 10px;
+    margin-bottom: 150px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer p a {
+    text-decoration: none;
+    color: var(--btn-color);
+}
+/* Footer Styles Starts From Here */
 
 
 
@@ -408,20 +459,24 @@ section {
         font-size: 18px;
     }
 
-    .some_facts {
+    .some_facts, .our_sponsors{
         padding: 30px;
         width: 100%;
         box-sizing: border-box;
         text-align: center;
+        margin-bottom: 70px;
     }
 
-    .some_facts_container {
+    .some_facts_container, .our_sponsors_container {
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
         padding: 0;
     }
 
+    .our_sponsors p {
+        margin
+    }
 
 }
 
