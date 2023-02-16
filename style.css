@@ -301,6 +301,61 @@ section {
 
 
 
+/* Testimonials Section Styles Start From Here */
+.testimonials {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.testimonials h2 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+}
+
+.testimonials .left_text {
+    margin: 20px 25% 0 25%;
+}
+
+.testimonials_reviews {
+    width: 65%;
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.review {
+    padding: 20px;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+}
+
+.review img {
+    border-radius: 100%;
+    border: 2px solid #01abe9;
+    margin-bottom: 10px;
+}
+
+.review .customer_name {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    color: #151414;
+    margin-bottom: 5px;
+}
+
+.review .star_review {
+    color: darkorange;
+}
+/* Testimonials Section Styles End Here */
+
+
 /* Our Sponsors Section Styles Starts From Here */
 .our_sponsors {
     margin: auto;
@@ -446,6 +501,10 @@ section {
         padding: 0;
     }
 
+    .our_experience_texts_column .o_e_t {
+        text-align: center;
+    }
+
     .our_experience_image_column .our_experience_btn {
         padding: 20px 25px;
     }
@@ -459,7 +518,7 @@ section {
         font-size: 18px;
     }
 
-    .some_facts, .our_sponsors{
+    .some_facts, .our_sponsors, .testimonials{
         padding: 30px;
         width: 100%;
         box-sizing: border-box;
@@ -467,18 +526,23 @@ section {
         margin-bottom: 70px;
     }
 
-    .some_facts_container, .our_sponsors_container {
+    .some_facts_container, .our_sponsors_container, .testimonials_reviews {
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
         padding: 0;
     }
 
-    .our_sponsors p {
-        margin
+
+
+    .our_sponsors p, .testimonials .left_text {
+        margin: 30px 0 0 0;
     }
 
+    .footer {
+        width: 100%;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
 }
-
-
 /*************************** @Medea Query Responsive Styles ***************************/
